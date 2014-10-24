@@ -1,0 +1,76 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 83.943 sec <<< FAILURE! - in TestSuite
+loginAndEditProfileTest(com.wahanda.acceptance.AccountTest)  Time elapsed: 37.565 sec  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for visibility of element located by By.id: ui-selectmenu-12a1516b-button
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'host-198.gts.wahanda.com', ip: '172.16.1.198', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.9.4', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{webdriver.remote.sessionid=5eb7cc70-1f16-4ddd-835f-1e269a35ad30, browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=7.0.5, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
+Session ID: 5eb7cc70-1f16-4ddd-835f-1e269a35ad30
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
+	at org.openqa.selenium.By$ById.findElement(By.java:214)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:39)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:126)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at com.wahanda.utility.TestUtility.waitForElementToBeVisible(TestUtility.java:144)
+	at com.wahanda.utility.TestUtility.click(TestUtility.java:101)
+	at com.wahanda.acceptance.AccountTest.loginAndEditProfileTest(AccountTest.java:124)
+Caused by: org.openqa.selenium.NoSuchElementException: Could not find element: {"using":"id","value":"ui-selectmenu-12a1516b-button"} (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'host-198.gts.wahanda.com', ip: '172.16.1.198', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.9.4', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=7.0.5, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
+Session ID: null
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'host-198.gts.wahanda.com', ip: '172.16.1.198', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.9.4', java.version: '1.8.0_25'
+Driver info: driver.version: EventFiringWebDriver
+	at sun.reflect.GeneratedConstructorAccessor24.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
+	at org.openqa.selenium.By$ById.findElement(By.java:214)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy6.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:169)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+loginAndPasswordChangeTest(com.wahanda.acceptance.AccountTest)  Time elapsed: 33.248 sec  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for visibility of element located by By.selector: #user-nav > div.button.other-button.a-login.hide > span
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'host-198.gts.wahanda.com', ip: '172.16.1.198', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.9.4', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{webdriver.remote.sessionid=5eb7cc70-1f16-4ddd-835f-1e269a35ad30, browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=7.0.5, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
+Session ID: 5eb7cc70-1f16-4ddd-835f-1e269a35ad30
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.wahanda.utility.TestUtility.waitForElementToBeVisible(TestUtility.java:141)
+	at com.wahanda.utility.TestUtility.click(TestUtility.java:101)
+	at com.wahanda.pages.wahanda.HeaderPage.login(HeaderPage.java:43)
+	at com.wahanda.utility.CommonActions.login(CommonActions.java:52)
+	at com.wahanda.acceptance.AccountTest.loginAndPasswordChangeTest(AccountTest.java:58)
+

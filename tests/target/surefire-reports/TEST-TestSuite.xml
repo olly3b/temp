@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestSuite" time="81.697" tests="3" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.25-b02"/>
+    <property name="user.country.format" value="GB"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/oliver/projects/regression-tests-backup/tests"/>
+    <property name="java.runtime.version" value="1.8.0_25-b17"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/h_/6bgxxwnj2vd1zng43h55qxgr0000gp/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/apache-maven-3.2.3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/oliver/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.9.4"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/oliver"/>
+    <property name="user.timezone" value="Europe/London"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="oliver"/>
+    <property name="java.class.path" value="/usr/local/apache-maven-3.2.3/boot/plexus-classworlds-2.5.1.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Plocal-wahanda-acceptance"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_25"/>
+    <property name="java.ext.dirs" value="/Users/oliver/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/apache-maven-3.2.3"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="accountCreationTest" classname="com.wahanda.acceptance.AccountTest" time="10.884"/>
+  <testcase name="loginAndEditProfileTest" classname="com.wahanda.acceptance.AccountTest" time="37.565">
+    <failure message="Timed out after 30 seconds waiting for visibility of element located by By.id: ui-selectmenu-12a1516b-button&#10;Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;&#10;System info: host: &apos;host-198.gts.wahanda.com&apos;, ip: &apos;172.16.1.198&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.4&apos;, java.version: &apos;1.8.0_25&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities [{webdriver.remote.sessionid=5eb7cc70-1f16-4ddd-835f-1e269a35ad30, browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=7.0.5, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]&#10;Session ID: 5eb7cc70-1f16-4ddd-835f-1e269a35ad30" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for visibility of element located by By.id: ui-selectmenu-12a1516b-button
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'host-198.gts.wahanda.com', ip: '172.16.1.198', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.9.4', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{webdriver.remote.sessionid=5eb7cc70-1f16-4ddd-835f-1e269a35ad30, browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=7.0.5, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
+Session ID: 5eb7cc70-1f16-4ddd-835f-1e269a35ad30
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
+	at org.openqa.selenium.By$ById.findElement(By.java:214)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:39)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:126)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at com.wahanda.utility.TestUtility.waitForElementToBeVisible(TestUtility.java:144)
+	at com.wahanda.utility.TestUtility.click(TestUtility.java:101)
+	at com.wahanda.acceptance.AccountTest.loginAndEditProfileTest(AccountTest.java:124)
+Caused by: org.openqa.selenium.NoSuchElementException: Could not find element: {"using":"id","value":"ui-selectmenu-12a1516b-button"} (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'host-198.gts.wahanda.com', ip: '172.16.1.198', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.9.4', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.safari.SafariDriver
+Capabilities [{browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=7.0.5, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
+Session ID: null
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'host-198.gts.wahanda.com', ip: '172.16.1.198', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.9.4', java.version: '1.8.0_25'
+Driver info: driver.version: EventFiringWebDriver
+	at sun.reflect.GeneratedConstructorAccessor24.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
+	at org.openqa.selenium.By$ById.findElement(By.java:214)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at sun.reflect.GeneratedMethodAccessor20.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:101)
+	at com.sun.proxy.$Proxy6.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:184)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:47)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:169)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</failure>
+    <system-out><![CDATA[2014-10-24 16:45:03 INFO  AccountTest:109 - safari any: ********** Test login and edit profile functionality **********
+2014-10-24 16:45:03 INFO  TestUtility:21 - safari any: Attempting to navigate to https://www.uat.wahanda.com
+2014-10-24 16:45:04 INFO  TestUtility:28 - safari any: Navigated to https://www.uat.wahanda.com
+2014-10-24 16:45:06 INFO  TestUtility:255 - register box does not exist
+2014-10-24 16:45:06 INFO  HomePage:52 - No register popup. Continuing as normal
+2014-10-24 16:45:06 INFO  TestUtility:122 - safari any: Clicked on login button
+2014-10-24 16:45:06 INFO  TestUtility:58 - safari any: Entered text 'editprofile@test.com' into email text box
+2014-10-24 16:45:06 INFO  TestUtility:58 - safari any: Entered text 'Password5' into password text box
+2014-10-24 16:45:06 INFO  TestUtility:122 - safari any: Clicked on submit login button
+2014-10-24 16:45:06 INFO  HeaderPage:48 - Logged in as editprofile@test.com
+2014-10-24 16:45:08 INFO  TestUtility:122 - safari any: Clicked on control open
+2014-10-24 16:45:08 INFO  TestUtility:122 - safari any: Clicked on my bookings link
+2014-10-24 16:45:09 INFO  TestUtility:122 - safari any: Clicked on edit my profile button
+2014-10-24 16:45:10 INFO  TestUtility:92 - safari any: Entered text 'changedFirstName' into edit profile first name
+2014-10-24 16:45:10 INFO  TestUtility:92 - safari any: Entered text 'changedLastName' into edit profile last name
+]]></system-out>
+  </testcase>
+  <testcase name="loginAndPasswordChangeTest" classname="com.wahanda.acceptance.AccountTest" time="33.248">
+    <failure message="Timed out after 30 seconds waiting for visibility of element located by By.selector: #user-nav &gt; div.button.other-button.a-login.hide &gt; span&#10;Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bceef1bc36d43f3dc0b83c88998168a363a0&apos;, time: &apos;2014-09-10 09:43:55&apos;&#10;System info: host: &apos;host-198.gts.wahanda.com&apos;, ip: &apos;172.16.1.198&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.4&apos;, java.version: &apos;1.8.0_25&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities [{webdriver.remote.sessionid=5eb7cc70-1f16-4ddd-835f-1e269a35ad30, browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=7.0.5, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]&#10;Session ID: 5eb7cc70-1f16-4ddd-835f-1e269a35ad30" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for visibility of element located by By.selector: #user-nav > div.button.other-button.a-login.hide > span
+Build info: version: '2.43.1', revision: '5163bceef1bc36d43f3dc0b83c88998168a363a0', time: '2014-09-10 09:43:55'
+System info: host: 'host-198.gts.wahanda.com', ip: '172.16.1.198', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.9.4', java.version: '1.8.0_25'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{webdriver.remote.sessionid=5eb7cc70-1f16-4ddd-835f-1e269a35ad30, browserName=safari, takesScreenshot=true, javascriptEnabled=true, version=7.0.5, cssSelectorsEnabled=true, platform=MAC, secureSsl=true}]
+Session ID: 5eb7cc70-1f16-4ddd-835f-1e269a35ad30
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.wahanda.utility.TestUtility.waitForElementToBeVisible(TestUtility.java:141)
+	at com.wahanda.utility.TestUtility.click(TestUtility.java:101)
+	at com.wahanda.pages.wahanda.HeaderPage.login(HeaderPage.java:43)
+	at com.wahanda.utility.CommonActions.login(CommonActions.java:52)
+	at com.wahanda.acceptance.AccountTest.loginAndPasswordChangeTest(AccountTest.java:58)
+</failure>
+    <system-out><![CDATA[2014-10-24 16:45:41 INFO  AccountTest:53 - safari any: ********** Test login and change password functionality **********
+2014-10-24 16:45:41 INFO  TestUtility:21 - safari any: Attempting to navigate to https://www.uat.wahanda.com
+2014-10-24 16:45:41 INFO  TestUtility:28 - safari any: Navigated to https://www.uat.wahanda.com
+2014-10-24 16:45:44 INFO  TestUtility:255 - register box does not exist
+2014-10-24 16:45:44 INFO  HomePage:52 - No register popup. Continuing as normal
+]]></system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Local grid profile]">
+  <parameter name="browserId" value="safari"/>
+  <parameter name="hubHost" value="localhost"/>
+  <parameter name="hubPort" value="4444"/>
+  <parameter name="version" value="any"/>
+  <test name="Safari(failed)" preserve-order="false">
+    <parameter name="browserId" value="safari"/>
+    <parameter name="hubHost" value="localhost"/>
+    <parameter name="hubPort" value="4444"/>
+    <parameter name="version" value="any"/>
+    <classes>
+      <class name="com.wahanda.acceptance.AccountTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="loginAndPasswordChangeTest"/>
+          <include name="loginAndEditProfileTest"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

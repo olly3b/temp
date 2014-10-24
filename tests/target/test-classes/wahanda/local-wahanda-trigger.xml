@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Local grid trigger profile">
+
+    <parameter name="hubHost" value="localhost" />
+    <parameter name="hubPort" value="4444" />
+
+    <test name="Chrome">
+        <parameter name="browserId" value="chrome" />
+        <parameter name="version" value="any" />
+
+        <classes>
+            <class name = "com.wahanda.trigger.TriggerTest" />
+        </classes>
+    </test>
+
+</suite>

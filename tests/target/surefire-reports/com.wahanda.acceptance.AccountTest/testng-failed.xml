@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [com.wahanda.acceptance.AccountTest]">
+  <test name="Command line test(failed)" preserve-order="false">
+    <classes>
+      <class name="com.wahanda.acceptance.AccountTest">
+        <methods>
+          <include name="accountCreationTest"/>
+          <include name="loginAndPasswordChangeTest"/>
+          <include name="loginAndEditProfileTest"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>
