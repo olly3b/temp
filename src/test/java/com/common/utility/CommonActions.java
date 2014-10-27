@@ -35,13 +35,6 @@ public class CommonActions {
         utility.jsClick(createProfilePage.getNewsletterRadio());
         utility.click(createProfilePage.getJoinWahandaButton());
 
-        // Sometimes the page blanks after completing it, try again if so
-        if (utility.getTextByValueAttribute(createProfilePage.getEmailTextBox()).equals("")) {
-            createProfilePage.fillAccountDetails(utility, accountForm);
-            utility.jsClick(createProfilePage.getNewsletterRadio());
-            utility.click(createProfilePage.getJoinWahandaButton());
-        }
-
         MyAccountPage myAccountPage = new MyAccountPage();
         try {
             utility.waitForElementToBeVisible(myAccountPage.getEditMyProfileButton());

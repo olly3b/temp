@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="host-198.gts.wahanda.com" name="com.tests.wahanda.acceptance.AccountTest" tests="3" failures="0" timestamp="27 Oct 2014 15:11:07 GMT" time="35.734" errors="0">
-  <testcase name="accountCreationTest" time="0.524" classname="com.tests.wahanda.acceptance.AccountTest"/>
-  <testcase name="loginAndEditProfileTest" time="7.953" classname="com.tests.wahanda.acceptance.AccountTest"/>
-  <testcase name="loginAndPasswordChangeTest" time="13.102" classname="com.tests.wahanda.acceptance.AccountTest"/>
+<testsuite hostname="host-198.gts.wahanda.com" name="com.tests.wahanda.acceptance.AccountTest" tests="2" failures="0" timestamp="27 Oct 2014 16:17:21 GMT" time="31.718" errors="0">
+  <testcase name="accountCreationTest" time="1.001" classname="com.tests.wahanda.acceptance.AccountTest"/>
+  <testcase name="loginAndEditAccountTest" time="15.491" classname="com.tests.wahanda.acceptance.AccountTest"/>
 </testsuite>

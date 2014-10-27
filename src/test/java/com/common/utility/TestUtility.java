@@ -35,6 +35,7 @@ public class TestUtility {
 
     public void enterText(Element element, String text) {
 
+        focus();
         waitForElementToBeVisible(element);
 
         try {
@@ -84,6 +85,8 @@ public class TestUtility {
     }
 
     public void clearAndEnterText(Element element, String text) {
+
+        focus();
         waitForElementToBeVisible(element);
 
         try {
@@ -119,6 +122,7 @@ public class TestUtility {
 
     public void click(Element element) {
 
+        focus();
         waitForElementToBeVisible(element);
         waitForElementToBeClickable(element);
 
@@ -148,11 +152,15 @@ public class TestUtility {
     }
 
     public void jsClick(Element element) {
+
+        focus();
         ((JavascriptExecutor) AbstractTest.driver).executeScript("arguments[0].click()", castElementToWebElement(element));
         LOG.info(AbstractTest.browserDescription + "Probably clicked on " + element.getName() + " using javascript executor");
     }
 
     public void waitForElementToBeVisible(Element element) throws Wait.WaitTimedOutException {
+
+        focus();
         WebDriverWait wait = new WebDriverWait(AbstractTest.driver, AbstractTest.EXPLICIT_TIMEOUT);
 
         try {
@@ -180,6 +188,8 @@ public class TestUtility {
     }
 
     public void waitForElementToBeClickable(Element element) {
+
+        focus();
         WebDriverWait wait = new WebDriverWait(AbstractTest.driver, AbstractTest.EXPLICIT_TIMEOUT);
 
         switch (element.getLocator()) {
@@ -204,7 +214,7 @@ public class TestUtility {
     public String getText(Element element) {
 
         String text = "";
-
+        focus();
         waitForElementToBeVisible(element);
 
         switch (element.getLocator()) {
@@ -231,7 +241,7 @@ public class TestUtility {
 
     public String getTextByValueAttribute(Element element) {
         String text = "";
-
+        focus();
         waitForElementToBeVisible(element);
 
         switch (element.getLocator()) {
@@ -257,6 +267,9 @@ public class TestUtility {
     }
 
     public boolean isVisible(Element element) throws NoSuchElementException {
+
+        focus();
+
         try {
             switch (element.getLocator()) {
                 case CSS:
@@ -279,6 +292,8 @@ public class TestUtility {
     }
 
     private WebElement castElementToWebElement(Element element) {
+        focus();
+
         switch (element.getLocator()) {
             case CSS:
                 return AbstractTest.driver.findElement(By.cssSelector(element.getLocatorString()));
@@ -297,6 +312,8 @@ public class TestUtility {
     }
 
     public void selectFromDropDownByText(Element element, String text) {
+        focus();
+
         Select select = new Select(castElementToWebElement(element));
         select.selectByVisibleText(text);
     }
@@ -306,6 +323,12 @@ public class TestUtility {
             Thread.sleep(miliseconds);
         } catch (InterruptedException e) {
 
+        }
+    }
+
+    public void focus() {
+        if (!AbstractTest.browserDescription.contains("firefox")) {
+            ((JavascriptExecutor) AbstractTest.driver).executeScript("$('" + AbstractTest.driver.getWindowHandle() + "#foo').focus()");
         }
     }
 }

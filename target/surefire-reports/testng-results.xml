@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="9" passed="9">
+<testng-results skipped="0" failed="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Local grid profile" duration-ms="111640" started-at="2014-10-27T15:10:31Z" finished-at="2014-10-27T15:12:23Z">
+  <suite name="Local grid profile" duration-ms="91139" started-at="2014-10-27T16:15:49Z" finished-at="2014-10-27T16:17:21Z">
     <groups>
     </groups>
-    <test name="Safari" duration-ms="35734" started-at="2014-10-27T15:10:31Z" finished-at="2014-10-27T15:11:07Z">
+    <test name="Safari" duration-ms="31718" started-at="2014-10-27T16:16:49Z" finished-at="2014-10-27T16:17:21Z">
       <class name="com.tests.wahanda.acceptance.AccountTest">
-        <test-method status="PASS" signature="setUp(java.lang.String, int, java.lang.String, java.lang.String)" name="setUp" is-config="true" duration-ms="1609" started-at="2014-10-27T15:10:31Z" finished-at="2014-10-27T15:10:33Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, int, java.lang.String, java.lang.String)" name="setUp" is-config="true" duration-ms="884" started-at="2014-10-27T16:16:49Z" finished-at="2014-10-27T16:16:50Z">
           <params>
             <param index="0">
               <value>
@@ -31,27 +31,23 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="createNewTestAccount()" name="createNewTestAccount" is-config="true" duration-ms="9627" started-at="2014-10-27T15:10:33Z" finished-at="2014-10-27T15:10:43Z">
+        <test-method status="PASS" signature="createNewTestAccount()" name="createNewTestAccount" is-config="true" duration-ms="9055" started-at="2014-10-27T16:16:50Z" finished-at="2014-10-27T16:16:59Z">
         </test-method>
-        <test-method status="PASS" signature="accountCreationTest()" name="accountCreationTest" duration-ms="524" started-at="2014-10-27T15:10:43Z" finished-at="2014-10-27T15:10:43Z">
+        <test-method status="PASS" signature="accountCreationTest()" name="accountCreationTest" duration-ms="1001" started-at="2014-10-27T16:16:59Z" finished-at="2014-10-27T16:17:00Z">
         </test-method>
-        <test-method status="PASS" signature="postTestLogout()" name="postTestLogout" is-config="true" duration-ms="895" started-at="2014-10-27T15:10:43Z" finished-at="2014-10-27T15:10:44Z">
+        <test-method status="PASS" signature="postTestLogout()" name="postTestLogout" is-config="true" duration-ms="1881" started-at="2014-10-27T16:17:00Z" finished-at="2014-10-27T16:17:02Z">
         </test-method>
-        <test-method status="PASS" signature="loginAndEditProfileTest()" name="loginAndEditProfileTest" duration-ms="7953" started-at="2014-10-27T15:10:44Z" finished-at="2014-10-27T15:10:52Z">
+        <test-method status="PASS" signature="loginAndEditAccountTest()" name="loginAndEditAccountTest" duration-ms="15491" started-at="2014-10-27T16:17:02Z" finished-at="2014-10-27T16:17:17Z">
         </test-method>
-        <test-method status="PASS" signature="postTestLogout()" name="postTestLogout" is-config="true" duration-ms="803" started-at="2014-10-27T15:10:52Z" finished-at="2014-10-27T15:10:53Z">
+        <test-method status="PASS" signature="postTestLogout()" name="postTestLogout" is-config="true" duration-ms="3346" started-at="2014-10-27T16:17:17Z" finished-at="2014-10-27T16:17:21Z">
         </test-method>
-        <test-method status="PASS" signature="loginAndPasswordChangeTest()" name="loginAndPasswordChangeTest" duration-ms="13102" started-at="2014-10-27T15:10:53Z" finished-at="2014-10-27T15:11:06Z">
-        </test-method>
-        <test-method status="PASS" signature="postTestLogout()" name="postTestLogout" is-config="true" duration-ms="1154" started-at="2014-10-27T15:11:06Z" finished-at="2014-10-27T15:11:07Z">
-        </test-method>
-        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="60" started-at="2014-10-27T15:11:07Z" finished-at="2014-10-27T15:11:07Z">
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="59" started-at="2014-10-27T16:17:21Z" finished-at="2014-10-27T16:17:21Z">
         </test-method>
       </class>
     </test>
-    <test name="Chrome" duration-ms="35134" started-at="2014-10-27T15:11:07Z" finished-at="2014-10-27T15:11:42Z">
+    <test name="Chrome" duration-ms="33151" started-at="2014-10-27T16:15:49Z" finished-at="2014-10-27T16:16:23Z">
       <class name="com.tests.wahanda.acceptance.AccountTest">
-        <test-method status="PASS" signature="setUp(java.lang.String, int, java.lang.String, java.lang.String)" name="setUp" is-config="true" duration-ms="2945" started-at="2014-10-27T15:11:07Z" finished-at="2014-10-27T15:11:10Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, int, java.lang.String, java.lang.String)" name="setUp" is-config="true" duration-ms="5038" started-at="2014-10-27T16:15:49Z" finished-at="2014-10-27T16:15:55Z">
           <params>
             <param index="0">
               <value>
@@ -75,27 +71,23 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="createNewTestAccount()" name="createNewTestAccount" is-config="true" duration-ms="9262" started-at="2014-10-27T15:11:10Z" finished-at="2014-10-27T15:11:19Z">
+        <test-method status="PASS" signature="createNewTestAccount()" name="createNewTestAccount" is-config="true" duration-ms="8873" started-at="2014-10-27T16:15:55Z" finished-at="2014-10-27T16:16:03Z">
         </test-method>
-        <test-method status="PASS" signature="accountCreationTest()" name="accountCreationTest" duration-ms="956" started-at="2014-10-27T15:11:19Z" finished-at="2014-10-27T15:11:20Z">
+        <test-method status="PASS" signature="accountCreationTest()" name="accountCreationTest" duration-ms="1566" started-at="2014-10-27T16:16:03Z" finished-at="2014-10-27T16:16:05Z">
         </test-method>
-        <test-method status="PASS" signature="postTestLogout()" name="postTestLogout" is-config="true" duration-ms="1294" started-at="2014-10-27T15:11:20Z" finished-at="2014-10-27T15:11:22Z">
+        <test-method status="PASS" signature="postTestLogout()" name="postTestLogout" is-config="true" duration-ms="2051" started-at="2014-10-27T16:16:05Z" finished-at="2014-10-27T16:16:07Z">
         </test-method>
-        <test-method status="PASS" signature="loginAndEditProfileTest()" name="loginAndEditProfileTest" duration-ms="6465" started-at="2014-10-27T15:11:22Z" finished-at="2014-10-27T15:11:28Z">
+        <test-method status="PASS" signature="loginAndEditAccountTest()" name="loginAndEditAccountTest" duration-ms="12956" started-at="2014-10-27T16:16:07Z" finished-at="2014-10-27T16:16:20Z">
         </test-method>
-        <test-method status="PASS" signature="postTestLogout()" name="postTestLogout" is-config="true" duration-ms="1217" started-at="2014-10-27T15:11:28Z" finished-at="2014-10-27T15:11:29Z">
+        <test-method status="PASS" signature="postTestLogout()" name="postTestLogout" is-config="true" duration-ms="2082" started-at="2014-10-27T16:16:20Z" finished-at="2014-10-27T16:16:22Z">
         </test-method>
-        <test-method status="PASS" signature="loginAndPasswordChangeTest()" name="loginAndPasswordChangeTest" duration-ms="10840" started-at="2014-10-27T15:11:29Z" finished-at="2014-10-27T15:11:40Z">
-        </test-method>
-        <test-method status="PASS" signature="postTestLogout()" name="postTestLogout" is-config="true" duration-ms="1553" started-at="2014-10-27T15:11:40Z" finished-at="2014-10-27T15:11:42Z">
-        </test-method>
-        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="602" started-at="2014-10-27T15:11:42Z" finished-at="2014-10-27T15:11:42Z">
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="580" started-at="2014-10-27T16:16:22Z" finished-at="2014-10-27T16:16:23Z">
         </test-method>
       </class>
     </test>
-    <test name="Firefox" duration-ms="40759" started-at="2014-10-27T15:11:42Z" finished-at="2014-10-27T15:12:23Z">
+    <test name="Firefox" duration-ms="26261" started-at="2014-10-27T16:16:23Z" finished-at="2014-10-27T16:16:49Z">
       <class name="com.tests.wahanda.acceptance.AccountTest">
-        <test-method status="PASS" signature="setUp(java.lang.String, int, java.lang.String, java.lang.String)" name="setUp" is-config="true" duration-ms="1960" started-at="2014-10-27T15:11:42Z" finished-at="2014-10-27T15:11:44Z">
+        <test-method status="PASS" signature="setUp(java.lang.String, int, java.lang.String, java.lang.String)" name="setUp" is-config="true" duration-ms="1978" started-at="2014-10-27T16:16:23Z" finished-at="2014-10-27T16:16:25Z">
           <params>
             <param index="0">
               <value>
@@ -119,21 +111,17 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="createNewTestAccount()" name="createNewTestAccount" is-config="true" duration-ms="8552" started-at="2014-10-27T15:11:44Z" finished-at="2014-10-27T15:11:53Z">
+        <test-method status="PASS" signature="createNewTestAccount()" name="createNewTestAccount" is-config="true" duration-ms="8311" started-at="2014-10-27T16:16:25Z" finished-at="2014-10-27T16:16:33Z">
         </test-method>
-        <test-method status="PASS" signature="accountCreationTest()" name="accountCreationTest" duration-ms="684" started-at="2014-10-27T15:11:53Z" finished-at="2014-10-27T15:11:54Z">
+        <test-method status="PASS" signature="accountCreationTest()" name="accountCreationTest" duration-ms="885" started-at="2014-10-27T16:16:33Z" finished-at="2014-10-27T16:16:34Z">
         </test-method>
-        <test-method status="PASS" signature="postTestLogout()" name="postTestLogout" is-config="true" duration-ms="1651" started-at="2014-10-27T15:11:54Z" finished-at="2014-10-27T15:11:55Z">
+        <test-method status="PASS" signature="postTestLogout()" name="postTestLogout" is-config="true" duration-ms="2085" started-at="2014-10-27T16:16:34Z" finished-at="2014-10-27T16:16:36Z">
         </test-method>
-        <test-method status="PASS" signature="loginAndEditProfileTest()" name="loginAndEditProfileTest" duration-ms="5754" started-at="2014-10-27T15:11:55Z" finished-at="2014-10-27T15:12:01Z">
+        <test-method status="PASS" signature="loginAndEditAccountTest()" name="loginAndEditAccountTest" duration-ms="11653" started-at="2014-10-27T16:16:36Z" finished-at="2014-10-27T16:16:48Z">
         </test-method>
-        <test-method status="PASS" signature="postTestLogout()" name="postTestLogout" is-config="true" duration-ms="1359" started-at="2014-10-27T15:12:01Z" finished-at="2014-10-27T15:12:02Z">
+        <test-method status="PASS" signature="postTestLogout()" name="postTestLogout" is-config="true" duration-ms="1264" started-at="2014-10-27T16:16:48Z" finished-at="2014-10-27T16:16:49Z">
         </test-method>
-        <test-method status="PASS" signature="loginAndPasswordChangeTest()" name="loginAndPasswordChangeTest" duration-ms="19011" started-at="2014-10-27T15:12:02Z" finished-at="2014-10-27T15:12:21Z">
-        </test-method>
-        <test-method status="PASS" signature="postTestLogout()" name="postTestLogout" is-config="true" duration-ms="1644" started-at="2014-10-27T15:12:21Z" finished-at="2014-10-27T15:12:23Z">
-        </test-method>
-        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="143" started-at="2014-10-27T15:12:23Z" finished-at="2014-10-27T15:12:23Z">
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="83" started-at="2014-10-27T16:16:49Z" finished-at="2014-10-27T16:16:49Z">
         </test-method>
       </class>
     </test>
