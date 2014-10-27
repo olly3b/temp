@@ -23,6 +23,8 @@ public class CreateProfilePage {
     public void fillAccountDetails(TestUtility utility, AccountForm accountForm) {
 
         if (AbstractTest.driver.getCurrentUrl().equals("https://www.uat.wahanda.com")) {
+            HomePage homePage = new HomePage();
+            homePage.checkForAndCloseRegisterBox();
             CommonActions commonActions = new CommonActions();
             commonActions.createNewRandomAccount();
         }

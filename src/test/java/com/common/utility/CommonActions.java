@@ -25,6 +25,8 @@ public class CommonActions {
         AccountHeaderPage accountHeaderPage = new AccountHeaderPage();
         utility.click(accountHeaderPage.getSignUpButton());
 
+        homePage.checkForAndCloseRegisterBox();
+
         AccountForm accountForm = new AccountForm();
         accountForm.generateTestUser();
 
