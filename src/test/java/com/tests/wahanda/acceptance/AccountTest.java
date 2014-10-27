@@ -117,6 +117,11 @@ public class AccountTest extends AbstractTest {
         utility.click(myAccountPage.getEditMyProfileButton());
         utility.clearAndEnterText(myAccountPage.getEditProfileFirstName(), "changedFirstName");
         utility.clearAndEnterText(myAccountPage.getEditProfileLastName(), "changedLastName");
+        // Check text has been entered and enter again if not
+        if (!utility.getTextByValueAttribute(myAccountPage.getEditProfileFirstName()).equals("changedFirstName")) {
+            utility.clearAndEnterText(myAccountPage.getEditProfileFirstName(), "changedFirstName");
+            utility.clearAndEnterText(myAccountPage.getEditProfileLastName(), "changedLastName");
+        }
         utility.click(myAccountPage.getEditProfileSaveButton());
         assertTrue(myAccountPage.getTextOfNameText(utility).equals("changedFirstName changedLastName"), browserDescription + "Failed to match name text on profile with expected text");
         assertTrue(myAccountPage.getTextOfGenderText(utility, accountForm).equals("Male"), browserDescription + "Failed to match gender text on profile with expected text");
