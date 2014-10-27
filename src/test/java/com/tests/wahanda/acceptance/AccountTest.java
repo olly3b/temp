@@ -5,6 +5,7 @@ import com.common.pages.wahanda.*;
 import com.common.utility.AbstractTest;
 import org.apache.log4j.Logger;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertTrue;
@@ -15,6 +16,12 @@ import static org.testng.Assert.assertTrue;
 public class AccountTest extends AbstractTest {
 
     private final Logger LOG = Logger.getLogger(AccountTest.class);
+    private AccountForm accountForm;
+
+    @BeforeClass
+    public void createNewTestAccount() {
+        accountForm = commonActions.createNewRandomAccount();
+    }
 
     @AfterMethod
     public void postTestLogout() {
@@ -24,8 +31,6 @@ public class AccountTest extends AbstractTest {
     @Test()
     public void accountCreationTest() {
         LOG.info(browserDescription + "********** Test accounts are created properly **********");
-
-        AccountForm accountForm = commonActions.createNewRandomAccount();
 
         MyAccountPage myAccountPage = new MyAccountPage();
         assertTrue(myAccountPage.getTextOfNameText(utility).equals(accountForm.getFirstName() + " " + accountForm.getLastName()), "Failed to match name text on profile with expected text");
@@ -55,9 +60,6 @@ public class AccountTest extends AbstractTest {
     @Test()
     public void loginAndPasswordChangeTest() {
         LOG.info(browserDescription + "********** Test login and change password functionality **********");
-
-        AccountForm accountForm = new AccountForm();
-        accountForm.setAsPasswordTestUser();
 
         commonActions.login(accountForm);
 
@@ -109,9 +111,6 @@ public class AccountTest extends AbstractTest {
     @Test
     public void loginAndEditProfileTest() {
         LOG.info(browserDescription + "********** Test login and edit profile functionality **********");
-
-        AccountForm accountForm = new AccountForm();
-        accountForm.setAsEditProfileTestUser();
 
         commonActions.login(accountForm);
         HeaderPage headerPage = new HeaderPage();

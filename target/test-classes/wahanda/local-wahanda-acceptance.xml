@@ -5,23 +5,23 @@
     <parameter name="hubHost" value="localhost" />
     <parameter name="hubPort" value="4444" />
 
-    <!--<test name="Chrome">-->
-        <!--<parameter name="browserId" value="chrome" />-->
-        <!--<parameter name="version" value="any" />-->
+    <test name="Chrome">
+        <parameter name="browserId" value="chrome" />
+        <parameter name="version" value="any" />
 
-        <!--<classes>-->
-            <!--<class name = "com.tests.wahanda.acceptance.AccountTest" />-->
-        <!--</classes>-->
-    <!--</test>-->
+        <classes>
+            <class name = "com.tests.wahanda.acceptance.AccountTest" />
+        </classes>
+    </test>
 
-    <!--<test name="Firefox">-->
-        <!--<parameter name="browserId" value="firefox" />-->
-        <!--<parameter name="version" value="any" />-->
+    <test name="Firefox">
+        <parameter name="browserId" value="firefox" />
+        <parameter name="version" value="any" />
 
-        <!--<classes>-->
-            <!--<class name = "com.tests.wahanda.acceptance.AccountTest" />-->
-        <!--</classes>-->
-    <!--</test>-->
+        <classes>
+            <class name = "com.tests.wahanda.acceptance.AccountTest" />
+        </classes>
+    </test>
 
     <test name="Safari">
         <parameter name="browserId" value="safari" />
