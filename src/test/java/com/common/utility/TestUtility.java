@@ -110,9 +110,9 @@ public class TestUtility {
                     break;
             }
 
-            LOG.info(AbstractTest.browserDescription + "Entered text '" + text + "' into " + element.getName());
+            LOG.info(AbstractTest.browserDescription + "Cleared text box and entered '" + text + "' into " + element.getName());
         } catch (Exception e) {
-            LOG.error(AbstractTest.browserDescription + "Failed to enter text'" + text + "' into " + element.getName() + " by " + element.getLocator().toString() + " using string " + element.getLocatorString());
+            LOG.error(AbstractTest.browserDescription + "Cleared and failed to enter text'" + text + "' into " + element.getName() + " by " + element.getLocator().toString() + " using string " + element.getLocatorString());
             e.printStackTrace();
         }
     }
