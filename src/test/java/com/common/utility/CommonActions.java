@@ -28,6 +28,7 @@ public class CommonActions {
         AccountForm accountForm = new AccountForm();
         accountForm.generateTestUser();
 
+        // Check the user hasn't been taken back to the home page and the registration box popup
         if (homePage.checkForAndCloseRegisterBox()) {
             createNewRandomAccount();
         }
@@ -36,6 +37,13 @@ public class CommonActions {
         createProfilePage.fillAccountDetails(utility, accountForm);
         utility.jsClick(createProfilePage.getNewsletterRadio());
         utility.click(createProfilePage.getJoinWahandaButton());
+
+        // Sometimes the page blanks after completing it, try again if so
+        if (utility.getTextByValueAttribute(createProfilePage.getEmailTextBox()).equals("")) {
+            createProfilePage.fillAccountDetails(utility, accountForm);
+            utility.jsClick(createProfilePage.getNewsletterRadio());
+            utility.click(createProfilePage.getJoinWahandaButton());
+        }
 
         MyAccountPage myAccountPage = new MyAccountPage();
         try {
