@@ -41,35 +41,35 @@ public class TestUtility {
             switch (element.getLocator()) {
                 case CSS:
                     AbstractTest.driver.findElement(By.cssSelector(element.getLocatorString())).sendKeys(text);
-                    if (!AbstractTest.driver.findElement(By.cssSelector(element.getLocatorString())).getText().equals(text)) {
+                    if (!AbstractTest.driver.findElement(By.cssSelector(element.getLocatorString())).getText().equals(text) && AbstractTest.browserDescription.contains("safari")) {
                         LOG.error(AbstractTest.browserDescription + "Entering text failed. Found '" + AbstractTest.driver.findElement(By.cssSelector(element.getLocatorString())).getText().equals(text) + "' Retrying with reverse text");
                         clearAndEnterText(element, new StringBuilder(text).reverse().toString());
                     }
                     break;
                 case ID:
                     AbstractTest.driver.findElement(By.id(element.getLocatorString())).sendKeys(text);
-                    if (!AbstractTest.driver.findElement(By.id(element.getLocatorString())).getText().equals(text)) {
+                    if (!AbstractTest.driver.findElement(By.id(element.getLocatorString())).getText().equals(text) && AbstractTest.browserDescription.contains("safari")) {
                         LOG.error(AbstractTest.browserDescription + "Entering text failed. Found '" + AbstractTest.driver.findElement(By.cssSelector(element.getLocatorString())).getText().equals(text) + "' Retrying");
                         clearAndEnterText(element, new StringBuilder(text).reverse().toString());
                     }
                     break;
                 case XPATH:
                     AbstractTest.driver.findElement(By.xpath(element.getLocatorString())).sendKeys(text);
-                    if (!AbstractTest.driver.findElement(By.xpath(element.getLocatorString())).getText().equals(text)) {
+                    if (!AbstractTest.driver.findElement(By.xpath(element.getLocatorString())).getText().equals(text) && AbstractTest.browserDescription.contains("safari")) {
                         LOG.error(AbstractTest.browserDescription + "Entering text failed. Found '" + AbstractTest.driver.findElement(By.cssSelector(element.getLocatorString())).getText().equals(text) + "' Retrying");
                         clearAndEnterText(element, new StringBuilder(text).reverse().toString());
                     }
                     break;
                 case LINKTEXT:
                     AbstractTest.driver.findElement(By.linkText(element.getLocatorString())).sendKeys(text);
-                    if (!AbstractTest.driver.findElement(By.linkText(element.getLocatorString())).getText().equals(text)) {
+                    if (!AbstractTest.driver.findElement(By.linkText(element.getLocatorString())).getText().equals(text) && AbstractTest.browserDescription.contains("safari")) {
                         LOG.error(AbstractTest.browserDescription + "Entering text failed. Found '" + AbstractTest.driver.findElement(By.cssSelector(element.getLocatorString())).getText().equals(text) + "' Retrying");
                         clearAndEnterText(element, new StringBuilder(text).reverse().toString());
                     }
                     break;
                 case NAME:
                     AbstractTest.driver.findElement(By.name(element.getLocatorString())).sendKeys(text);
-                    if (!AbstractTest.driver.findElement(By.name(element.getLocatorString())).getText().equals(text)) {
+                    if (!AbstractTest.driver.findElement(By.name(element.getLocatorString())).getText().equals(text) && AbstractTest.browserDescription.contains("safari")) {
                         LOG.error(AbstractTest.browserDescription + "Entering text failed. Found '" + AbstractTest.driver.findElement(By.cssSelector(element.getLocatorString())).getText().equals(text) + "' Retrying");
                         clearAndEnterText(element, new StringBuilder(text).reverse().toString());
                     }
