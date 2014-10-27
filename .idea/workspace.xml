@@ -74,8 +74,8 @@
       <file leaf-file-name="TriggerTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/tests/wahanda/trigger/TriggerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5840708" vertical-offset="0" max-vertical-offset="930">
-              <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.21238938" vertical-offset="210" max-vertical-offset="930">
+              <caret line="22" column="70" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -444,11 +444,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/tests/src/test/java/com/common/wahanda" />
       <recent name="$PROJECT_DIR$/tests/src/test/resources/wahanda" />
       <recent name="$PROJECT_DIR$/common/src/main/java/com/wahanda/utility" />
       <recent name="$PROJECT_DIR$/common/src/main/java/com/wahanda/scripts" />
-      <recent name="$PROJECT_DIR$/common/src/main/java/com/wahanda" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -1056,8 +1056,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/tests/wahanda/trigger/TriggerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5840708" vertical-offset="0" max-vertical-offset="930">
-          <caret line="22" column="51" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.21238938" vertical-offset="210" max-vertical-offset="930">
+          <caret line="22" column="70" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

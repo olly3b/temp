@@ -20,7 +20,7 @@ public class TriggerTest extends AbstractTest {
     @Test
     public void checkForNewVersion() {
 
-        File file = new File("/Users/oliver/Desktop/version.txt");
+        File file = new File("/Users/Shared/Jenkins/Home/jobs/Trigger/version.txt");
 
         String oldVersion = "";
         try {
