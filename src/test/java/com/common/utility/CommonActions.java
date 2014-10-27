@@ -28,6 +28,10 @@ public class CommonActions {
         AccountForm accountForm = new AccountForm();
         accountForm.generateTestUser();
 
+        if (homePage.checkForAndCloseRegisterBox()) {
+            createNewRandomAccount();
+        }
+
         CreateProfilePage createProfilePage = new CreateProfilePage();
         createProfilePage.fillAccountDetails(utility, accountForm);
         utility.jsClick(createProfilePage.getNewsletterRadio());

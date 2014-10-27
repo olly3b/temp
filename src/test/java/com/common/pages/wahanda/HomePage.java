@@ -41,16 +41,20 @@ public class HomePage {
         checkForAndCloseRegisterBox();
     }
 
-    public void checkForAndCloseRegisterBox() {
+    public boolean checkForAndCloseRegisterBox() {
 
         try {
             if (AbstractTest.utility.isVisible(getRegisterBox())) {
                 AbstractTest.utility.click(getRegisterBoxCloseButton());
                 LOG.info("Closed register popup");
+
+                return true;
             }
         } catch (NoSuchElementException e) {
             LOG.info("No register popup. Continuing as normal");
         }
+
+        return false;
     }
 
     public String getVersionText() {
