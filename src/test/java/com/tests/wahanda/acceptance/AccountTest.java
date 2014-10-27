@@ -132,12 +132,5 @@ public class AccountTest extends AbstractTest {
         utility.click(myAccountPage.getEditProfileSaveButton());
         assertTrue(myAccountPage.getTextOfNameText(utility).equals("changedFirstName changedLastName"), "Failed to match name text on profile with expected text");
         assertTrue(myAccountPage.getTextOfGenderText(utility, accountForm).equals("Male"), "Failed to match gender text on profile with expected text");
-
-        utility.click(myAccountPage.getEditMyProfileButton());
-        utility.clearAndEnterText(myAccountPage.getEditProfileFirstName(), accountForm.getFirstName());
-        utility.clearAndEnterText(myAccountPage.getEditProfileLastName(), accountForm.getLastName());
-        utility.click(myAccountPage.getEditProfileSaveButton());
-        assertTrue(myAccountPage.getTextOfNameText(utility).equals(accountForm.getFirstName() + " " + accountForm.getLastName()), "Failed to match name text on profile with expected text");
-        assertTrue(myAccountPage.getTextOfGenderText(utility, accountForm).equals(accountForm.getGender().substring(0, 1).toUpperCase() + accountForm.getGender().substring(1)), "Failed to match gender text on profile with expected text");
     }
 }
