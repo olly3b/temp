@@ -300,4 +300,12 @@ public class TestUtility {
         Select select = new Select(castElementToWebElement(element));
         select.selectByVisibleText(text);
     }
+
+    public void pause(int miliseconds) {
+        try {
+            Thread.sleep(miliseconds);
+        } catch (InterruptedException e) {
+
+        }
+    }
 }

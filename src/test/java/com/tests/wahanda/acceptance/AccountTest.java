@@ -58,8 +58,8 @@ public class AccountTest extends AbstractTest {
     }
 
     @Test()
-    public void loginAndPasswordChangeTest() {
-        LOG.info(browserDescription + "********** Test login and change password functionality **********");
+    public void loginAndEditAccountTest() {
+        LOG.info(browserDescription + "********** Test login and edit account details **********");
 
         commonActions.login(accountForm);
 
@@ -106,19 +106,7 @@ public class AccountTest extends AbstractTest {
         utility.click(changePasswordPage.getSubmitButton());
         assertTrue(utility.getText(changePasswordPage.getChangeSuccessText()).equals("Your password was successfully changed"), browserDescription + "Password not successfully changed");
         utility.click(changePasswordPage.getCloseButton());
-    }
 
-    @Test
-    public void loginAndEditProfileTest() {
-        LOG.info(browserDescription + "********** Test login and edit profile functionality **********");
-
-        commonActions.login(accountForm);
-        HeaderPage headerPage = new HeaderPage();
-
-        utility.click(headerPage.getControlOpen());
-        utility.click(headerPage.getMyBookings());
-
-        MyAccountPage myAccountPage = new MyAccountPage();
         utility.click(myAccountPage.getEditMyProfileButton());
         utility.clearAndEnterText(myAccountPage.getEditProfileFirstName(), "changedFirstName");
         utility.clearAndEnterText(myAccountPage.getEditProfileLastName(), "changedLastName");
@@ -132,5 +120,6 @@ public class AccountTest extends AbstractTest {
         utility.click(myAccountPage.getEditProfileSaveButton());
         assertTrue(myAccountPage.getTextOfNameText(utility).equals("changedFirstName changedLastName"), browserDescription + "Failed to match name text on profile with expected text");
         assertTrue(myAccountPage.getTextOfGenderText(utility, accountForm).equals("Male"), browserDescription + "Failed to match gender text on profile with expected text");
+
     }
 }

@@ -28,11 +28,6 @@ public class CommonActions {
         AccountForm accountForm = new AccountForm();
         accountForm.generateTestUser();
 
-        // Check the user hasn't been taken back to the home page and the registration box popup
-        if (homePage.checkForAndCloseRegisterBox()) {
-            createNewRandomAccount();
-        }
-
         CreateProfilePage createProfilePage = new CreateProfilePage();
         createProfilePage.fillAccountDetails(utility, accountForm);
         utility.jsClick(createProfilePage.getNewsletterRadio());

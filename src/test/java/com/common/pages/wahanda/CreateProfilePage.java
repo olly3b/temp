@@ -1,9 +1,8 @@
 package com.common.pages.wahanda;
 
 import com.common.forms.AccountForm;
-import com.common.utility.Element;
-import com.common.utility.Locator;
-import com.common.utility.TestUtility;
+import com.common.utility.*;
+import org.openqa.selenium.NoSuchElementException;
 
 /**
  * Created by oliver on 23/10/2014.
@@ -22,6 +21,12 @@ public class CreateProfilePage {
     private Element joinWahandaButton = new Element("join wahanda button", Locator.CSS, "#register-form > div.fields > div.actions > div.small-12.medium-4.large-4.columns > button > span.primary-text");
 
     public void fillAccountDetails(TestUtility utility, AccountForm accountForm) {
+
+        if (AbstractTest.driver.getCurrentUrl().equals("https://www.uat.wahanda.com")) {
+            CommonActions commonActions = new CommonActions();
+            commonActions.createNewRandomAccount();
+        }
+
         utility.enterText(emailTextBox, accountForm.getEmail());
         utility.enterText(passwordTextBox, accountForm.getPassword());
         utility.enterText(firstNameTextBox, accountForm.getFirstName());
