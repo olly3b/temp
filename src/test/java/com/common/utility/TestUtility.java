@@ -41,18 +41,33 @@ public class TestUtility {
             switch (element.getLocator()) {
                 case CSS:
                     AbstractTest.driver.findElement(By.cssSelector(element.getLocatorString())).sendKeys(text);
+                    if (!AbstractTest.driver.findElement(By.cssSelector(element.getLocatorString())).getText().equals(text)) {
+                        clearAndEnterText(element, text);
+                    }
                     break;
                 case ID:
                     AbstractTest.driver.findElement(By.id(element.getLocatorString())).sendKeys(text);
+                    if (!AbstractTest.driver.findElement(By.id(element.getLocatorString())).getText().equals(text)) {
+                        clearAndEnterText(element, text);
+                    }
                     break;
                 case XPATH:
                     AbstractTest.driver.findElement(By.xpath(element.getLocatorString())).sendKeys(text);
+                    if (!AbstractTest.driver.findElement(By.xpath(element.getLocatorString())).getText().equals(text)) {
+                        clearAndEnterText(element, text);
+                    }
                     break;
                 case LINKTEXT:
                     AbstractTest.driver.findElement(By.linkText(element.getLocatorString())).sendKeys(text);
+                    if (!AbstractTest.driver.findElement(By.linkText(element.getLocatorString())).getText().equals(text)) {
+                        clearAndEnterText(element, text);
+                    }
                     break;
                 case NAME:
                     AbstractTest.driver.findElement(By.name(element.getLocatorString())).sendKeys(text);
+                    if (!AbstractTest.driver.findElement(By.name(element.getLocatorString())).getText().equals(text)) {
+                        clearAndEnterText(element, text);
+                    }
                     break;
             }
 
