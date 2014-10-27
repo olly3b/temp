@@ -4,6 +4,7 @@ import com.common.forms.AccountForm;
 import com.common.pages.wahanda.*;
 import com.common.utility.AbstractTest;
 import org.apache.log4j.Logger;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertTrue;
@@ -14,6 +15,11 @@ import static org.testng.Assert.assertTrue;
 public class AccountTest extends AbstractTest {
 
     private final Logger LOG = Logger.getLogger(AccountTest.class);
+
+    @AfterMethod
+    public void postTestLogout() {
+        commonActions.logout();
+    }
 
     @Test()
     public void accountCreationTest() {
@@ -44,8 +50,6 @@ public class AccountTest extends AbstractTest {
         } catch (AssertionError e) {
             LOG.error("Not seeing correct text in wallet centre block");
         }
-
-        commonActions.logout();
     }
 
     @Test()
@@ -100,8 +104,6 @@ public class AccountTest extends AbstractTest {
         utility.click(changePasswordPage.getSubmitButton());
         assertTrue(utility.getText(changePasswordPage.getChangeSuccessText()).equals("Your password was successfully changed"), "Password not successfully changed");
         utility.click(changePasswordPage.getCloseButton());
-
-        commonActions.logout();
     }
 
     @Test
@@ -138,7 +140,5 @@ public class AccountTest extends AbstractTest {
         utility.click(myAccountPage.getEditProfileSaveButton());
         assertTrue(myAccountPage.getTextOfNameText(utility).equals(accountForm.getFirstName() + " " + accountForm.getLastName()), "Failed to match name text on profile with expected text");
         assertTrue(myAccountPage.getTextOfGenderText(utility, accountForm).equals(accountForm.getGender().substring(0, 1).toUpperCase() + accountForm.getGender().substring(1)), "Failed to match gender text on profile with expected text");
-
-        commonActions.logout();
     }
 }
