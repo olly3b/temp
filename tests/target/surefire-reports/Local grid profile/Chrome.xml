@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="host-198.gts.wahanda.com" name="com.wahanda.acceptance.AccountTest" tests="3" failures="0" timestamp="24 Oct 2014 15:28:15 GMT" time="36.07" errors="0">
-  <testcase name="accountCreationTest" time="11.677" classname="com.wahanda.acceptance.AccountTest"/>
-  <testcase name="loginAndEditProfileTest" time="8.468" classname="com.wahanda.acceptance.AccountTest"/>
-  <testcase name="loginAndPasswordChangeTest" time="12.753" classname="com.wahanda.acceptance.AccountTest"/>
-</testsuite>

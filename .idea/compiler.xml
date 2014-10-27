@@ -23,7 +23,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="common" />
-        <module name="tests" />
+        <module name="regression-tests" />
       </profile>
     </annotationProcessing>
   </component>

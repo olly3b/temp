@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Local grid profile">
+
+    <parameter name="hubHost" value="localhost" />
+    <parameter name="hubPort" value="4444" />
+
+    <test name="Chrome">
+        <parameter name="browserId" value="chrome" />
+        <parameter name="version" value="any" />
+
+        <classes>
+            <class name = "com.tests.wahanda.acceptance.AccountTest" />
+        </classes>
+    </test>
+
+    <test name="Firefox">
+        <parameter name="browserId" value="firefox" />
+        <parameter name="version" value="any" />
+
+        <classes>
+            <class name = "com.tests.wahanda.acceptance.AccountTest" />
+        </classes>
+    </test>
+
+    <test name="Safari">
+        <parameter name="browserId" value="safari" />
+        <parameter name="version" value="any" />
+
+        <classes>
+            <class name = "com.tests.wahanda.acceptance.AccountTest" />
+        </classes>
+    </test>
+
+</suite>
